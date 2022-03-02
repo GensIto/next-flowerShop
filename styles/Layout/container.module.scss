@@ -1,0 +1,31 @@
+@import '../variables';
+
+.Container {
+    position: relative;
+    padding: 0 .5rem;
+    margin: 0 auto;
+    max-width: 1300px;
+    // ↓768px以下で適用したいCSS
+    @include mq(md) {
+    }
+}
+
+.ContainerFull {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.ContainerMqMd {
+    position: relative;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 100%;
+    // ↓768px以下で適用したいCSS
+    @include mq(md) {
+        padding: 0 .5rem;
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+}

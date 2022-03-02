@@ -1,0 +1,20 @@
+@import '../variables';
+
+.normal {
+    position: relative;
+    padding: 4rem 0;
+    // ↓768px以下で適用したいCSS
+    @include mq(md) {
+        padding: 2rem 0;
+    }
+}
+
+.Sm {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.Md {
+    position: relative;
+    padding: 2rem 0;
+}
